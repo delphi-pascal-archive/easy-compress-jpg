@@ -1,0 +1,114 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;;  File part of EasyCompressJpg version 4.0 by Nicolas Paglieri
+;;
+;;                            www.ni69.info
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+[HEADER]
+Application=EasyCompressJpg
+Version=40
+ID=17D5B2702D39F1A6C1E3ACEDAE99CC45
+
+NumberOfProfiles_int=3 
+DefaultProfile_int=
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; Do not change the "Application", "Version" and "ID" keys.
+;; 
+;; You can fill only a few fields, others will be set to default values.
+;;
+;; You need to change the field "NumberOfProfiles_int"
+;; everytime you add or delete profiles.
+;;
+;; Some Format specifications (suffixes located in each FieldName) :
+;; _date : "dd/mm/yyyy" 
+;; _time : "hh:mm:ss"   
+;; _bool : "1" or "0"     
+;; _int  : Integer
+;; _str  : String
+;; _cl   : Color, like: "clBlack", "clRed", "$00FF7575", ...
+;; 
+;; Possible values for the field "Metadata_CopyrightPosition_int" are:
+;; "1"->TopLeft, "2"->TopRight, "3"->BottomLeft, "4"->BottomRight 
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+[PROFILE1]
+Name_str=Publication Internet
+Compression_Rate_int=50
+Compression_ReduceSize_bool=1
+Compression_NewSizeIndex_int=1
+Destination_Index_int=1
+Destination_MakeBackup_bool=
+Metadata_DeleteMetadata_bool=1
+Metadata_DeleteThumbnails_bool=1
+Metadata_ChangeDate_bool=1
+Metadata_NewDate_date=01/01/2000
+Metadata_NewTime_time=00:00:00
+Metadata_AddComment_bool=
+Metadata_Comment_str=
+Metadata_AddCopyright_bool=1
+Metadata_Copyright_str=© Copyright 
+Metadata_CopyrightPosition_int=
+Metadata_CopyrightFontName_str=
+Metadata_CopyrightFontSize_int=
+Metadata_CopyrightFontColor_cl=
+Metadata_CopyrightFontStyleBold_bool=
+Metadata_CopyrightFontStyleItalic_bool=
+Metadata_CopyrightFontStyleUnderline_bool=
+Metadata_CopyrightFontStyleStrikeOut_bool=
+
+[PROFILE2]
+Name_str=Stockage Personnel
+Compression_Rate_int=80
+Compression_ReduceSize_bool=
+Compression_NewSizeIndex_int=
+Destination_Index_int=
+Destination_MakeBackup_bool=
+Metadata_DeleteMetadata_bool=
+Metadata_DeleteThumbnails_bool=
+Metadata_ChangeDate_bool=
+Metadata_NewDate_date=
+Metadata_NewTime_time=
+Metadata_AddComment_bool=1
+Metadata_Comment_str=
+Metadata_AddCopyright_bool=
+Metadata_Copyright_str=
+Metadata_CopyrightPosition_int=
+Metadata_CopyrightFontName_str=
+Metadata_CopyrightFontSize_int=
+Metadata_CopyrightFontColor_cl=
+Metadata_CopyrightFontStyleBold_bool=
+Metadata_CopyrightFontStyleItalic_bool=
+Metadata_CopyrightFontStyleUnderline_bool=
+Metadata_CopyrightFontStyleStrikeOut_bool=
+
+[PROFILE3]
+Name_str=Envoi par e-mail
+Compression_Rate_int=60
+Compression_ReduceSize_bool=1
+Compression_NewSizeIndex_int=2
+Destination_Index_int=2
+Destination_MakeBackup_bool=
+Metadata_DeleteMetadata_bool=1
+Metadata_DeleteThumbnails_bool=
+Metadata_ChangeDate_bool=
+Metadata_NewDate_date=
+Metadata_NewTime_time=
+Metadata_AddComment_bool=1
+Metadata_Comment_str=
+Metadata_AddCopyright_bool=
+Metadata_Copyright_str=
+Metadata_CopyrightPosition_int=
+Metadata_CopyrightFontName_str=
+Metadata_CopyrightFontSize_int=
+Metadata_CopyrightFontColor_cl=
+Metadata_CopyrightFontStyleBold_bool=
+Metadata_CopyrightFontStyleItalic_bool=
+Metadata_CopyrightFontStyleUnderline_bool=
+Metadata_CopyrightFontStyleStrikeOut_bool=

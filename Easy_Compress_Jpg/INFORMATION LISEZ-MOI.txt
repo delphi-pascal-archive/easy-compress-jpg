@@ -1,0 +1,102 @@
+////////////////////////////////////////////////////////////////////////////////
+//                                                                            //
+//                   E A S Y    C O M P R E S S    J P G                      //
+//                                                                            //
+//                                Version 4.0                                 //
+//                              Nicolas PAGLIERI                              //
+//                                                                            //
+//                            webmaster@ni69.info                             //
+//                               www.ni69.info                                //
+//                                                                            //
+////////////////////////////////////////////////////////////////////////////////
+//                                                                            //
+//                            delphifr.com : ni69                             //
+//                                                                            //
+////////////////////////////////////////////////////////////////////////////////
+
+
+Ce programme permet de compresser des images bitmap/jpeg en images jpeg.
+
+Atouts Majeurs :
+> Ajout simplissime de fichiers à la sélection
+> Aperçu de l'effet de la compression sur une image avant son éventuelle modification, incluant la possibilité de zoom sur des détails
+> Réglage fin du niveau de compression
+> Redimensionnement possible, 6 formats standards proposés
+> Plusieurs possibilités d'exportation, incluant la création d'archives ZIP
+> Gestion complète des métadonnées EXIF, XMP, miniatures (thumbnails), Commentaires, Copyright,...
+> Possibilité d'ajout d'une mention de Copyright ou de tout autre texte sur l'image elle-même, dans une police personnalisée
+> Possibilité de modifier les dates de création, de modification et de dernier accès
+> Gestion fine des erreurs
+> Profils de compression personnalisables permettant de paramétrer l'ensemble de l'application d'un seul coup
+
+
+
+===================================================
+===================================================
+Détails des fonctionnalités présentes dans la fenêtre principale:
+
+
+GESTION DES FICHIERS SELECTIONNES
+
+Ajout de fichiers à la liste : Trois méthodes possibles :
+> en passage de paramètres d'un fichier image ou d'un dossier, et ceci même quand l'application est déjà en cours d'exécution
+> par drag&drop d'un fichier image ou d'un dossier sur la liste
+> par le bouton "Ajouter"
+Dans le cas de l'ajout d'un dossier, toutes les images valides (bitmap et jpeg) qui sont incluses à l'intérieur de ce dossier et dans ses sous-dossiers sont incluses
+
+Suppression de fichiers de la liste :
+Sélectionnez simplement les fichiers dans la liste (possibilité de sélection multiple) et cliquez sur "Supprimer" (la souche Suppr. marche également)
+
+Visualisation d'un fichier de la liste :
+Lors de la visualisation d'un fichier, une autre fenêtre s'ouvre. Vous avez ainsi la possibilité de comparer l'image originale avec une version compressée en fonction du niveau de compression que vous spécifiez. Vous pouvez vous déplacer dans l'image (cliquez dessus et faites glisser) et changer le niveau du zoom pour observer des détails plus finement. Quand une image compressée d'exemple est produite, sa taille apparaît automatiquement pour vous permettre de comparer également les différences.
+
+---------------------------------------------------
+COMPRESSION
+
+Sélection de la qualité de la compression :
+Cet indice parcourt tous les entiers de 1 à 100 (1 représentant la qualité la plus basse, et 100 la meilleure).
+Vous pouvez vous servir de l'option de visualisation (voir ci-dessus) pour déterminer la qualité de compression adaptée à vos exigences.
+La taille finale des fichiers créés dépend principalement de ce critère.
+
+Redimensionnement des images
+Cette option vous permet de réduire les dimensions des images créées en redimensionnant toutes les images plus grandes que la limite fixée.
+Six formats standards sont proposés : 640×480, 800×600, 1024×768, 1280×1024, 1600×1200, et 2048×1536
+Les images sont bien évidemment redimensionnées en conservant leurs proportions initiales (les dimensions ci-dessus ne sont que des limites de taille) et en évitant au maximum leur altération (pixellisation, etc...)
+
+---------------------------------------------------
+DESTINATION
+
+Choix de l'emplacement de destination : Trois possibilités s'offrent à vous
+> Remplacer les fichiers : Dans ce cas les images compressées prendront la place des images originales et vous perdrez toutes les anciennes versions à moins que vous ne décidiez de réaliser une sauvegarde, option qui est proposée par le programme.
+> Copier dans un dossier : Toutes les images sélectionnées seront compressées et placées dans un même dossier indifféremment de leur emplacement d'origine. Les doublons seront automatiquement renommés afin de ne perdre aucun fichier.
+> Compresser dans un dossier ZIP : Toutes les images sélectionnées seront compressées et placées dans un dossier ZIP indifféremment de leur emplacement d'origine. Les doublons seront automatiquement renommés afin de ne perdre aucun fichier.
+
+
+===================================================
+===================================================
+Utilisation de ressources externes et autres détails
+
+
+RESSOURCES EXTERNES
+
+J'utilise dans cette application deux ressources complémentaires (j'en remercie les créateurs!) :
+> EXIFTOOL de Phil Harvey (http://www.sno.phy.queensu.ca/~phil/exiftool/)
+> TZIP de Angus Johnson (http://www.angusj.com/delphi/)
+
+Tous les fichiers nécessaires au fonctionnement des ressources externes sont fournis dans le zip sous forme de fichiers ".RES" et sont automatiquement compilés.
+Dans le futur, vous aurez besoin de fournir uniquement l'exécutable de l'application pour déployer le programme sur un autre ordinateur (les compléments sont recréés automatiquement)
+
+---------------------------------------------------
+FICHIER DE PROFILS PERSONNALISES
+
+Ce fichier (facultatif au fonctionnement normal du programme) est nommé "CompressionProfiles.jcfg", placé dans le répertoire de l'application, et n'est rien d'autre qu'un fichier INI, modifiable par n'importe quel éditeur de texte.
+Lors du démarrage de l'application, les profils qu'il contient sont chargés et sont disponibles facilement en bas de la fenêtre.
+Toutes les directives nécessaires, ainsi que le format des données à fournir pour conduire à la création de vos profils personnalisés sont inclus dans le fichier en commentaires
+
+---------------------------------------------------
+INSTALLATION DU PROGRAMME
+
+Ce programme ne nécessite pas d'installation particulière au niveau du registre ou des fichiers système.
+Sachez toutefois que lors de l'exécution, deux fichiers sont créés dans le dossier de l'application, et que si vous ajoutez à cela le fichier de profils personnalisés, on arrive à 4 fichiers au total, donc autant dire qu'il est plus pratique de ranger ça dans un dossier à part.
+Note : sachez également qu'un répertoire "$temp$" peut être créé dans le dossier de l'application lors de la compression.
+Ce dossier est normalement supprimé automatiquement à la fin de son exécution.
